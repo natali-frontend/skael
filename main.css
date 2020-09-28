@@ -50,7 +50,7 @@ h1 {
 h4 {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
   line-height: 1.36;
 }
 
@@ -79,12 +79,11 @@ ul {
 li:before {
   content: "-";
   position: relative;
-  left: -5px;
+  left: 0;
 }
 
 .container {
   padding: 0 15px;
-  max-width: 1161px;
   margin: 0 auto;
 }
 
@@ -97,6 +96,74 @@ li:before {
 }
 .terms-description {
   padding: 0 0 125px;
+}
+
+@media screen and (max-width: 1100px) {
+  h1 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+
+  h4, p, li, a {
+    font-size: 16px;
+  }
+
+  h4 {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    margin-bottom: 30px;
+  }
+
+  p, li {
+    margin-bottom: 30px;
+  }
+  p:last-child, li:last-child {
+    margin-bottom: 0;
+  }
+
+  .terms-title {
+    padding: 50px 0 110px;
+  }
+  .terms-title-image {
+    max-width: 442px;
+  }
+  .terms-title-description {
+    padding: 0 0 110px;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h4 {
+    margin-bottom: 50px;
+  }
+
+  p, li {
+    margin-bottom: 25px;
+  }
+  p:last-child, li:last-child {
+    margin-bottom: 0;
+  }
+
+  h4, p, li, a {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+  .terms-title {
+    padding: 0 0 45px;
+  }
+  .terms-title-image {
+    max-width: 212px;
+  }
+  .terms-description {
+    padding: 0 0 50px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
