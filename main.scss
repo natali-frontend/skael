@@ -16,20 +16,25 @@ h1 {
   font-size: 56px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 140px;
+  margin-bottom: 120px;
 }
 
 h4 {
-  font-size: 22px;
   font-weight: 600;
-  margin-bottom: 25px;
-  line-height: 1.36;
+  margin-bottom: 35px;
 }
 
-p, a, li {
+h4, p, a, li {
   font-size: 20px;
-  font-weight: 400;
   line-height: 1.25;
+}
+
+p, li {
+  margin-bottom: 35px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 a {
@@ -42,13 +47,6 @@ a:active {
   color: rgba(40, 82, 240, 0.5);
 }
 
-p, li {
-  margin-bottom: 35px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
 
 ul {
   list-style: none;
@@ -58,7 +56,7 @@ ul {
 li:before {
   content: "-";
   position: relative;
-  left: 0;
+  left: -3px;
 }
 
 .container {
@@ -67,9 +65,9 @@ li:before {
   max-width: 1161px;
 }
 
-.terms {
+.privacy {
   &-title {
-    padding: 150px 0 145px;
+    padding: 150px 0 35px;
 
     &-image {
       margin: 0 auto;
@@ -78,7 +76,7 @@ li:before {
   }
 
   &-description {
-    padding: 0 0 125px;
+    padding: 0 0 140px;
   }
 }
 
@@ -86,13 +84,13 @@ li:before {
   h1 {
     font-size: 30px;
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   h4, p, li, a {
     font-size: 16px;
   }
   h4 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   ul {
     margin-bottom: 30px;
@@ -104,16 +102,17 @@ li:before {
       margin-bottom: 0;
     }
   }
-  .terms {
+
+  .privacy {
     &-title {
-      padding: 50px 0 110px;
+      padding: 55px 0 95px;
 
       &-image {
         max-width: 442px;
       }
 
       &-description {
-        padding: 0 0 110px;
+        padding: 0 0 105px;
       }
     }
   }
@@ -133,7 +132,7 @@ li:before {
     width: 100vw;
   }
   h4 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   p, li {
     margin-bottom: 25px;
@@ -142,11 +141,14 @@ li:before {
       margin-bottom: 0;
     }
   }
+  ul {
+    margin-bottom: 25px;
+  }
   h4, p, li, a {
     font-size: 14px;
     line-height: 1.28;
   }
-  .terms {
+  .privacy {
     &-title {
       padding: 0 0 45px;
 
