@@ -61,7 +61,15 @@ p, a, li {
 }
 
 a {
-  color: #2852F0;
+  color: #7860FA;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: rgba(40, 82, 240, 0.5);
 }
 
 p, li {
@@ -85,6 +93,7 @@ li:before {
 .container {
   padding: 0 15px;
   margin: 0 auto;
+  max-width: 1161px;
 }
 
 .terms-title {
@@ -137,6 +146,15 @@ li:before {
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 20px;
+    background: #7860FA;
+    color: #fff;
+    padding: 0 0 15px;
+    margin-bottom: 50px;
+    border-radius: 0 0 50px 50px;
+    position: relative;
+    left: -15px;
+    box-shadow: 0 8px 20px 0 rgba(21, 67, 202, 0.23);
+    width: 100vw;
   }
 
   h4 {
